@@ -63,42 +63,9 @@ A simple feed-forward ANN built with Keras' `Sequential` API:
 - All features — scaled with `StandardScaler`
 - Train/test split — 80/20
 
-## Setup
-
-```bash
-# Clone the repository
-git clone <repo-url>
-cd <repo-folder>
-
-# Install dependencies
-pip install -r requirements.txt
-```
+## Link : https://churnann-7pohjrf7yzsznnkumgmwyf.streamlit.app/
 
 **Dependencies:** TensorFlow, pandas, NumPy, scikit-learn, TensorBoard, Matplotlib, Streamlit
-
-## Usage
-
-**1. Train the model**
-
-Run all cells in `experiments.ipynb` to preprocess the data, train the ANN, and save `model.h5` along with the encoder/scaler `.pkl` files.
-
-**2. Run a sample prediction**
-
-Open `prediction.ipynb` to see churn prediction on a single example record using the saved model and preprocessing objects.
-
-**3. Launch the web app**
-
-```bash
-streamlit run app.py
-```
-
-This opens an interactive form where you can input customer details (geography, gender, age, balance, credit score, etc.) and get a real-time churn probability and prediction.
-
-## Future Improvements
-- Add model evaluation metrics (precision, recall, ROC-AUC) given the ~80/20 class imbalance in the target
-- Add input validation in the Streamlit app
-- Containerize the app with Docker for easier deployment
-- Track experiments with MLflow alongside TensorBoard
 
 ## License
 
